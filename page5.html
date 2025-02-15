@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 5 - Something for You</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec;
+        }
+        .container {
+            display: none;
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .gif {
+            width: 300px;
+            height: auto;
+        }
+        .next-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1" class="container">
+        <p>I am still mad at you, and the most infuriating thing is—you don’t even know why!!! So let me tell you, you dumb bitch! <br> 
+
+            Last night, when I called you and asked you to sing for me (obviously so that I could bully you), after insisting a million times, you still didn’t. YOU DIDN’T. 
+            First of all, how dare you!!! I expect my man to kiss the ground I walk on—nothing less than that. And you couldn’t even sing two lines?!
+            
+            ON TOP OF THAT, you had the audacity to say, "What if I don't sing? Emon toh na je tumi breakup kore felba, eventually toh tumi e call diba." really <br> 
+            
+            The audacity!!! Huh! <br>
+            
+            So don’t even flatter yourself, thinking I made this project for you. I made it for me!! oiwehfowehfeoiwhf ughhhhh . Got it? I did this to learn coding. 
+            I’ve made progress so far, but I still need to study more. Then I’ll move on to the next part. Whatever.
+            
+            Now, go to the next slide to see what will happen if you continue to hurt me like this. </p>
+        <img src="assets/censored-carrot.webp" class="gif" alt="Censored">
+        <button class="next-btn" onclick="showNext(1)">Next</button>
+    </div>
+    
+    <div id="container2" class="container">
+        <p>WLL CHOP YOUR GAJOR LIKE THIS </p>
+        <img src="assets/chop chop.gif" class="gif" alt="chop chop">
+        <button class="next-btn" onclick="showNext(2)">Next</button>
+    </div>
+    
+    <div id="container3" class="container">
+        <p>And I will mix hair removing creme to you shampoo cause if you're gonna act like that bald headed, shit faced, penis look-alike andrew tate , you might as well look like one 🔪🔥💀 </p>
+        <img src="assets/poop.gif" class="gif" alt="poop">
+    </div>
+    
+    <script>
+        let currentContainer = 1;
+        document.getElementById("container1").style.display = "block";
+
+        function showNext(containerNumber) {
+            document.getElementById("container" + containerNumber).style.display = "none";
+            document.getElementById("container" + (containerNumber + 1)).style.display = "block";
+        }
+    </script>
+</body>
+</html>

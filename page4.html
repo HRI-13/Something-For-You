@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something for You - Page 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="image-container">
+            <img src="assets/letter paper.png" alt="Lletter paper" >
+            <div class="text-box">
+                <p>My Mushu Pakhi,
+
+                    This Valentine’s Day feels different. Not because my love for you has changed, 
+                    but because we stand at a place where love is not just about being together—it’s about cherishing what we have, no matter where life takes us. <br>
+                    
+                    For the past five years, you have been my best friend, my safe place, and the kind of love that stories fail to capture. 
+                    We built something rare—something deeper than just romance. And no matter what happens, I want you to know this: 
+                    You will always hold a place in my heart that no one can replace. <br>
+                    
+                    Love isn’t always about forever in the way the world expects it to be. Sometimes, love is about finding a person who changes you in ways you never imagined, 
+                    who teaches you what it means to truly care, to truly understand. You have been that person for me. <br>
+                    
+                    You are my soulmate. Not just because we connect deeply, but because a soulmate is someone who makes you feel understood in ways no one else can. 
+                    It’s that person who walks through life with you, who brings out the best parts of you, who makes you feel truly seen. You have been that for me, 
+                    and I’ve been that for you. It’s a bond that goes beyond time, beyond distance.
+                    
+                    💖</p>
+            </div>
+        </div>
+        <p> Now it's time for some much needed warning. are you ready? </p>
+        <div class="button-container">
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let yesBtn = document.getElementById("yes-btn");
+                let noBtn = document.getElementById("no-btn");
+        
+                // Move "No" button when hovered
+                noBtn.addEventListener("mouseover", function () {
+                    let currentX = noBtn.offsetLeft;
+                    let currentY = noBtn.offsetTop;
+        
+                    let moveX = Math.random() * 150 - 75;
+                    let moveY = Math.random() * 150 - 75;
+        
+                    let newX = currentX + moveX;
+                    let newY = currentY + moveY;
+        
+                    newX = Math.max(10, Math.min(window.innerWidth - 120, newX));
+                    newY = Math.max(10, Math.min(window.innerHeight - 60, newY));
+        
+                    noBtn.style.transition = "top 0.2s ease, left 0.2s ease";
+                    noBtn.style.left = newX + "px";
+                    noBtn.style.top = newY + "px";
+                });
+        
+                // ✅ Redirect to page5.html when "Yes" button is clicked
+                yesBtn.addEventListener("click", function () {
+                    window.location.href = "page5.html"; // Use .html instead of .php
+                });
+            });
+        </script>
+        
+        
+        
+        
+</body>
+</html>

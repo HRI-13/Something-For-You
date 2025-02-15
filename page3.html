@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something for You - Page 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        
+        <p>on your way 🥰</p>
+
+        <!-- GIF -->
+        <img id="gif" src="assets/mailbox.gif" alt="mail sending">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let gif = document.getElementById("gif");
+        
+                // Get GIF duration in seconds (manually check GIF length)
+                let gifDuration = 3; // Change this based on your GIF length in seconds
+        
+                // Redirect after the GIF finishes playing
+                setTimeout(function() {
+                    window.location.href = "page4.html"; // Change to your next page
+                }, gifDuration * 1000); // Convert seconds to milliseconds
+            });
+        </script>
+        
+        <p><img src="assets/sending.gif" alt="SENDING" class="sending"></p>
+
+    
+</body>
+</html>
